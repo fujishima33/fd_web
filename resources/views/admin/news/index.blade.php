@@ -31,8 +31,8 @@
                     <table class="table table-dark">
                         <thead>
                             <tr>
-                                <th width="50%">タイトル</th>
-                                <th width="50%">URL</th>
+                                <th width="45%">タイトル</th>
+                                <th width="45%">URL</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +40,14 @@
                                 <tr>
                                     <td>{{ \Str::limit($news->title, 100) }}</td>
                                     <td>{{ \Str::limit($news->url, 100) }}</td>
+                                    <td>
+                                        <div>
+                                            <a href="{{ action('Admin\NewsController@edit', ['id' => $news->id]) }}">編集</a>
+                                        </div>
+                                        <div>
+                                            <a href="{{ action('Admin\NewsController@delete', ['id' => $news->id]) }}">削除</a>
+                                        </div>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
