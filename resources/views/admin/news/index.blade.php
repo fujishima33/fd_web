@@ -4,7 +4,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h2>ニュース一覧</h2>
+            <h2>ニュース一覧（管理用）</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -33,13 +33,14 @@
                             <tr>
                                 <th width="45%">タイトル</th>
                                 <th width="45%">URL</th>
+                                <th width="10%"></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($posts as $news)
                                 <tr>
                                     <td>{{ \Str::limit($news->title, 100) }}</td>
-                                    <td>{{ \Str::limit($news->url, 100) }}</td>
+                                    <td>{!! $news->url !!}</td>
                                     <td>
                                         <div>
                                             <a href="{{ action('Admin\NewsController@edit', ['id' => $news->id]) }}">編集</a>
