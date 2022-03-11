@@ -44,6 +44,7 @@
                         </form>
                     </div>
                 </div>
+                <div class="text-center">ユーザー名とパスワードは屯所で確認できます</div>
             </div>
         </div>
     </div>
