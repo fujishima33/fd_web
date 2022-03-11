@@ -5,3 +5,13 @@ body {
   color: #fff;
 }
 
+.card {
+  background-color: #555 !important;
+  border: none;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
+}
+
