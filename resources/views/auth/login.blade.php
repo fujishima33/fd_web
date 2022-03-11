@@ -1,10 +1,10 @@
-@extends('layouts.admin')
+@extends('layouts.common')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="text-center mb-5"><h2>動画まとめサイト</h2></div>
+                <div class="text-center mb-5"><h2>7-4動画まとめサイト</h2></div>
                 <div class="login-box card">
                     <div class="login-header card-header mx-auto">{{ __('messages.Please') }}</div>
 
