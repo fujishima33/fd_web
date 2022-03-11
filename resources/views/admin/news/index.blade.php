@@ -49,6 +49,9 @@
                         </div>
                     @endforeach
                 </div>
+                <div class="my-3">
+                    {{ $posts->appends(request()->query())->links() }}
+                </div>
             </div>
         </div>
     </div>
